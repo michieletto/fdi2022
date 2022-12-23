@@ -11,7 +11,7 @@ void print_list(struct Node *head) {
 }
 
 struct Node* new_node(int value) {
-    struct Node* node = malloc(sizeof(node));
+    struct Node* node = (struct Node*)malloc(sizeof(struct Node));
     if (node != NULL) {
         node->value = value;
         node->next = NULL;
